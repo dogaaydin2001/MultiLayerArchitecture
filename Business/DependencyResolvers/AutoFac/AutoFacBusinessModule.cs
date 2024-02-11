@@ -19,6 +19,8 @@ namespace Business.DependencyResolvers.AutoFac
 
             builder.RegisterType<UserOperationClaimManager>().As<IUserOperationClaimService>();
             builder.RegisterType<EfUserOperationClaimDal>().As<IUserOperationClaimDal>();
+
+            builder.RegisterType<AuthManager>().As<IAuthService>();
         }
     }
 }

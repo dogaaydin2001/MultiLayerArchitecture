@@ -18,11 +18,6 @@ namespace WebApi.Controllers
 
         [HttpPost("add")]
 
-        public IActionResult Add(AuthDto authDto)
-        {
-          //  _userService.Add(user);
-            return Ok("Kullanıcı kaydı başarıyla tamamlandı.");
-        }
 
         [HttpGet("getList")]
 
@@ -32,3 +27,5 @@ namespace WebApi.Controllers
         }
     }
 }
+
+//ekleme işlemini kullanmamıza gerek kalmadı AuthController ile aynı işlemi yapıyor
